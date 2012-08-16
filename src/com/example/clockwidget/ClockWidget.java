@@ -42,6 +42,7 @@ public class ClockWidget extends AppWidgetProvider {
 			if (ACTION_START_MY_ALARM.equals(intent.getAction())) {
 				Intent serviceIntent = new Intent(context, Myservice.class);
 				context.startService(serviceIntent);
+				Log.d("onReceive","if文の中");
 			}
 			Log.d("onReceiveの中","setAlarm()の前");
 			setAlarm(context);
@@ -51,6 +52,7 @@ public class ClockWidget extends AppWidgetProvider {
 	public void onUpdate(Context context, AppWidgetManager appWidgetManager,
 			int[] appWidgetIds) {
 		// TODO 自動生成されたメソッド・スタブ
+			Log.d("update","Updateの中");
 			setAlarm(context);
 		}
 	
