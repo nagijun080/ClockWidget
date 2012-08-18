@@ -30,33 +30,33 @@ public class Myservice extends Service {
 		Log.d("Myservice",new Date().toLocaleString());
 		Calendar date = Calendar.getInstance();
 		Integer second = date.get(Calendar.SECOND);
-		Integer seFirst = second % 10;
-		Integer seSecond = second / 10;
+		Integer secUD = second % 10;
+		Integer secTD = second / 10;
 		
 		Integer minute = date.get(Calendar.MINUTE);
-		Integer miFirst = minute % 10;
-		Integer miSecond = minute / 10;
+		Integer minUD = minute % 10;
+		Integer minTD = minute / 10;
 		
 		Integer hour = date.get(Calendar.HOUR);
-		Integer hoFirst = hour % 10;
-		Integer hoSecond = hour / 10;
+		Integer hrUD = hour % 10;
+		Integer hrTD = hour / 10;
 		
 		//十の位の時数をimageView6に表示
-		remoteViews.setImageViewResource(R.id.imageView6, numImage[hoSecond]);
+		remoteViews.setImageViewResource(R.id.hrTenthsDigit, numImage[hrTD]);
 		//一の位の時数をimageView5に表示
-		remoteViews.setImageViewResource(R.id.imageView5, numImage[hoFirst]);
+		remoteViews.setImageViewResource(R.id.hrUnitDigit, numImage[hrUD]);
 				
 		
 		//十の位の分数をimageView4に表示
-		remoteViews.setImageViewResource(R.id.imageView4, numImage[miSecond]);
+		remoteViews.setImageViewResource(R.id.minTenthsDigit, numImage[minTD]);
 		//一の位の分数をimageView3に表示
-		remoteViews.setImageViewResource(R.id.imageView3, numImage[miFirst]);
+		remoteViews.setImageViewResource(R.id.minUnitDigit, numImage[minUD]);
 		
 		
 		//十の位の秒数をimageView2に表示
-		remoteViews.setImageViewResource(R.id.imageView2, numImage[seSecond]);
+		//remoteViews.setImageViewResource(R.id.secTenthsDigit, numImage[secTD]);
 		//一の位の秒数をimageView1に表示
-		remoteViews.setImageViewResource(R.id.imageView1, numImage[seFirst]);
+		//remoteViews.setImageViewResource(R.id.secUnitDigit, numImage[secUD]);
 		
 		
 		ComponentName thisWidget = new ComponentName(this, ClockWidget.class);

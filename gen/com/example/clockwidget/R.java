@@ -30,15 +30,17 @@ public final class R {
         public static final int ic_launcher=0x7f02000b;
     }
     public static final class id {
+        public static final int day=0x7f090003;
         public static final int digitalClock=0x7f090001;
-        public static final int imageView1=0x7f090007;
-        public static final int imageView2=0x7f090006;
-        public static final int imageView3=0x7f090005;
-        public static final int imageView4=0x7f090004;
-        public static final int imageView5=0x7f090003;
-        public static final int imageView6=0x7f090002;
-        public static final int menu_settings=0x7f090008;
+        public static final int hrTenthsDigit=0x7f090005;
+        public static final int hrUnitDigit=0x7f090006;
+        public static final int menu_settings=0x7f09000a;
+        public static final int minTenthsDigit=0x7f090007;
+        public static final int minUnitDigit=0x7f090008;
         public static final int text=0x7f090000;
+        public static final int textAnniversary=0x7f090009;
+        public static final int week=0x7f090004;
+        public static final int year=0x7f090002;
     }
     public static final class layout {
         public static final int main=0x7f030000;
